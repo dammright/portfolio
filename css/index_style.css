@@ -65,15 +65,16 @@ main{
   display: flex;
 }
 #nav2{
+  display: flex;
   flex-grow: 1;
   width: 50%;
   height: inherit;
-  margin-top: 15%;;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row
 }
 #buttonsNav2{
-  float: right;
   display: flex;
-  margin: auto;
   flex-direction: column;
 }
 #buttonsNav2 button{
@@ -92,11 +93,8 @@ main{
   background-color: grey;
 }
 #test{
-  float: right;
   text-align: center;
-  margin: auto;
-  padding: none;
-  display:flex;
+  flex-direction: column;
 }
 #test ul{
   display: flex;
@@ -125,9 +123,9 @@ main{
   width:50%;
   display: block;
   height: inherit;
-  margin-top: 15%;
-  margin-left: 5%;
+  margin-left: 2%;
+  border-left: 3px solid black;
 }
 #over_mij p{
-  margin-top: 5px;
+  margin: auto;
 }
