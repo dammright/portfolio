@@ -8,20 +8,55 @@ ul{
 li a {
     text-decoration: none;
 }
+nav{
+  background-color: darkgrey;
+}
 ul.main_nav{
   overflow: hidden;
   margin: 0;
   padding:0;
-  background-color: grey;
-
+  background-color: darkgrey;
+  margin-right: 20px;
 }
 ul.main_nav li{
-  float: right;
+  float: right
 }
 ul.main_nav li a{
   color: white;
-  display:block;
+  display:inline-block;
   padding: 10px;
+  font-size: 2em;
+}
+ul.main_nav li :hover{
+  background-color: gray;
+}
+ul.main_nav li a span{
+  position: relative;
+  transition: .5s;
+}
+#contact span:after{
+  content: "\2709";
+    top: -3px;
+  right: -5px;
+}
+#portfolio span:after{
+  content: "\00ab";
+  right: -5px;
+}
+ul.main_nav li a span:after{
+  position: absolute;
+  opacity: 0;
+  transition: .5s;
+}
+#contact  a:hover span{
+  padding-right: 40px;
+}
+#portfolio  a:hover span{
+  padding-right: 25px;
+}
+ul.main_nav li a:hover span:after{
+  opacity: 1;
+  right: 0;
 }
 main{
   background-color:lightgrey;
@@ -37,33 +72,52 @@ main{
 }
 #buttonsNav2{
   float: right;
-  display: block;
+  display: flex;
   margin: auto;
-  margin-left: 5%;
-
+  flex-direction: column;
 }
-button{
-  display: block;
-  margin: auto;
+#buttonsNav2 button{
+  display: flex;
+  justify-content: flex-end;
   margin-top: 5px;
   background: none;
   border: none;
-  font: inherit;
+  font-family: inherit;
+  font-size: 2em;
   color:white;
   cursor: pointer;
+  transition: .5s;
+}
+#buttonsNav2 button:hover{
+  background-color: grey;
 }
 #test{
   float: right;
   text-align: center;
   margin: auto;
   padding: none;
-  margin-right: 5%;
+  display:flex;
+}
+#test ul{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 #test li{
   margin-top: 5px;
+  transition: .5s;
+}
+#test li:hover{
+  margin-top: 5px;
+  background-color: grey;
 }
 #test li a{
     color: white;
+    font-size: 2em;
+    transition: .5s;
+}
+#test li a:hover{
+
 }
 #over_mij{
   float: left;
