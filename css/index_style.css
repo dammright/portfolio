@@ -42,6 +42,7 @@ ul.main_nav li a span{
 #portfolio span:after{
   content: "\00ab";
   right: -5px;
+  top: -1px;
 }
 ul.main_nav li a span:after{
   position: absolute;
@@ -66,12 +67,11 @@ main{
 }
 #nav2{
   display: flex;
-  flex-grow: 1;
-  width: 50%;
   height: inherit;
   align-items: center;
   justify-content: flex-end;
-  flex-direction: row
+  flex-direction: row;
+    width: 35%;
 }
 #buttonsNav2{
   display: flex;
@@ -91,6 +91,7 @@ main{
 }
 #buttonsNav2 button:hover{
   background-color: grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #test{
   text-align: center;
@@ -106,8 +107,8 @@ main{
   transition: .5s;
 }
 #test li:hover{
-  margin-top: 5px;
   background-color: grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #test li a{
     color: white;
@@ -119,8 +120,7 @@ main{
 }
 #over_mij{
   float: left;
-  flex-grow: 1;
-  width:50%;
+  width: 65%;
   display: block;
   height: inherit;
   margin-left: 2%;
